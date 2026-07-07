@@ -24,7 +24,7 @@ git clone https://github.com/SEU_USUARIO/wtr-energia-solar.git
 3. Save
 4. Aguarde 2-5 minutos
 
-**URL:** `https://SEU_USUARIO.github.io/wtr-energia-solar/`
+**URL:** `https://Vini8910.github.io/wtr-energia-solar/`
 
 ---
 
