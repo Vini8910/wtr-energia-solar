@@ -34,11 +34,13 @@ jobs:
 
       - name: Prepare deploy
         run: |
-          mkdir deploy
+          mkdir -p deploy/styles
+          mkdir -p deploy/scripts
           cp index.html deploy/
           cp -r assets deploy/
           cp -r branding deploy/
-          cp -r dist deploy/
+          cp -r dist/styles deploy/styles/
+          cp -r dist/scripts deploy/scripts/
           cp -r pages deploy/ || true
 
       - name: Deploy
