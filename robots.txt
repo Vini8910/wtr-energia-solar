@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.wtrenergiasolar.com.br/sitemap.xml
+Sitemap: https://vini8910.github.io/wtr-energia-solar/sitemap.xml
 
 User-agent: Googlebot
 Allow: /
