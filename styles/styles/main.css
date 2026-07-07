@@ -4,24 +4,1772 @@
  */
 
 /* Design Tokens */
-@import url('../branding/palette/index.css');
+
+/* Design Tokens - Index
+ * WTR Energia Solar
+ * Importa todos os tokens de design
+ */
+
+/* Design Tokens - Colors
+ * WTR Energia Solar
+ * Paleta de cores baseada em sustentabilidade e tecnologia
+ */
+
+:root {
+  /* Primary Colors - Solar Energy */
+  --color-primary: #FDB813;
+  --color-primary-light: #FFE580;
+  --color-primary-dark: #FF9500;
+  
+  /* Secondary Colors - Sustainability */
+  --color-secondary: #00713C;
+  --color-secondary-light: #4CD964;
+  --color-secondary-dark: #005229;
+  
+  /* Accent Colors - Technology */
+  --color-accent: #0052CC;
+  --color-accent-light: #4DA6FF;
+  --color-accent-dark: #003A99;
+  
+  /* Neutral Colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray-50: #FAFAFA;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-400: #BDBDBD;
+  --color-gray-500: #9E9E9E;
+  --color-gray-600: #757575;
+  --color-gray-700: #616161;
+  --color-gray-800: #424242;
+  --color-gray-900: #212121;
+  
+  /* Semantic Colors */
+  --color-background: var(--color-white);
+  --color-background-alt: var(--color-gray-50);
+  --color-text: var(--color-gray-900);
+  --color-text-light: var(--color-gray-600);
+  --color-text-muted: var(--color-gray-500);
+  
+  /* Status Colors */
+  --color-success: #28A745;
+  --color-success-light: #D4EDDA;
+  --color-warning: #FFC107;
+  --color-warning-light: #FFF3CD;
+  --color-error: #DC3545;
+  --color-error-light: #F8D7DA;
+  --color-info: #17A2B8;
+  --color-info-light: #D1ECF1;
+  
+  /* Overlay */
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-overlay-light: rgba(255, 255, 255, 0.9);
+}
+
+/* Design Tokens - Typography
+ * WTR Energia Solar
+ */
+
+:root {
+  /* Font Families */
+  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-secondary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-mono: 'Fira Code', 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-md: 1rem;         /* 16px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-size-xl: 1.25rem;      /* 20px */
+  --font-size-2xl: 1.5rem;      /* 24px */
+  --font-size-3xl: 1.875rem;    /* 30px */
+  --font-size-4xl: 2.25rem;     /* 36px */
+  --font-size-5xl: 3rem;        /* 48px */
+  --font-size-6xl: 3.75rem;     /* 60px */
+  
+  /* Line Heights */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+}
+
+/* Design Tokens - Spacing
+ * WTR Energia Solar
+ */
+
+:root {
+  /* Spacing Scale - Base 4px */
+  --spacing-0: 0;
+  --spacing-px: 1px;
+  --spacing-0-5: 0.125rem;  /* 2px */
+  --spacing-1: 0.25rem;     /* 4px */
+  --spacing-1-5: 0.375rem;  /* 6px */
+  --spacing-2: 0.5rem;      /* 8px */
+  --spacing-2-5: 0.625rem;  /* 10px */
+  --spacing-3: 0.75rem;     /* 12px */
+  --spacing-3-5: 0.875rem;  /* 14px */
+  --spacing-4: 1rem;        /* 16px */
+  --spacing-5: 1.25rem;     /* 20px */
+  --spacing-6: 1.5rem;      /* 24px */
+  --spacing-7: 1.75rem;     /* 28px */
+  --spacing-8: 2rem;        /* 32px */
+  --spacing-9: 2.25rem;     /* 36px */
+  --spacing-10: 2.5rem;     /* 40px */
+  --spacing-11: 2.75rem;    /* 44px */
+  --spacing-12: 3rem;         /* 48px */
+  --spacing-14: 3.5rem;     /* 56px */
+  --spacing-16: 4rem;         /* 64px */
+  --spacing-20: 5rem;         /* 80px */
+  --spacing-24: 6rem;         /* 96px */
+  --spacing-28: 7rem;         /* 112px */
+  --spacing-32: 8rem;         /* 128px */
+  --spacing-36: 9rem;         /* 144px */
+  --spacing-40: 10rem;        /* 160px */
+  --spacing-44: 11rem;        /* 176px */
+  --spacing-48: 12rem;        /* 192px */
+  --spacing-52: 13rem;        /* 208px */
+  --spacing-56: 14rem;        /* 224px */
+  --spacing-60: 15rem;        /* 240px */
+  --spacing-64: 16rem;        /* 256px */
+  --spacing-72: 18rem;        /* 288px */
+  --spacing-80: 20rem;        /* 320px */
+  --spacing-96: 24rem;        /* 384px */
+  
+  /* Aliases for common use */
+  --spacing-xs: var(--spacing-2);
+  --spacing-sm: var(--spacing-4);
+  --spacing-md: var(--spacing-6);
+  --spacing-lg: var(--spacing-8);
+  --spacing-xl: var(--spacing-12);
+  --spacing-2xl: var(--spacing-16);
+  --spacing-3xl: var(--spacing-24);
+}
+
+/* Design Tokens - Shadows
+ * WTR Energia Solar
+ */
+
+:root {
+  /* Shadow Tokens */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px 12px rgba(0, 0, 0, 0.25);
+  
+  /* Inner Shadows */
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  
+  /* Focus Ring */
+  --shadow-focus: 0 0 0 3px rgba(253, 184, 19, 0.4);
+  --shadow-focus-error: 0 0 0 3px rgba(220, 53, 69, 0.4);
+}
+
+/* Design Tokens - Borders
+ * WTR Energia Solar
+ */
+
+:root {
+  /* Border Radius */
+  --radius-none: 0;
+  --radius-sm: 0.125rem;    /* 2px */
+  --radius-md: 0.25rem;     /* 4px */
+  --radius-lg: 0.5rem;      /* 8px */
+  --radius-xl: 0.75rem;     /* 12px */
+  --radius-2xl: 1rem;       /* 16px */
+  --radius-3xl: 1.5rem;     /* 24px */
+  --radius-full: 9999px;
+  
+  /* Border Width */
+  --border-0: 0;
+  --border-2: 2px;
+  --border-4: 4px;
+  --border-8: 8px;
+  
+  /* Border Style */
+  --border-solid: solid;
+  --border-dashed: dashed;
+  --border-dotted: dotted;
+  
+  /* Border Color */
+  --border-color: var(--color-gray-300);
+  --border-color-hover: var(--color-gray-400);
+  --border-color-focus: var(--color-primary);
+}
+
+/* Design Tokens - Animation
+ * WTR Energia Solar
+ */
+
+:root {
+  /* Duration */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+  
+  /* Easing */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Transition */
+  --transition-fast: var(--duration-fast) var(--ease-out);
+  --transition-normal: var(--duration-normal) var(--ease-out);
+  --transition-slow: var(--duration-slow) var(--ease-out);
+  
+  /* Animation Presets */
+  --animation-fade-in: fadeIn var(--duration-normal) var(--ease-out);
+  --animation-fade-out: fadeOut var(--duration-normal) var(--ease-out);
+  --animation-slide-up: slideUp var(--duration-normal) var(--ease-out);
+  --animation-slide-down: slideDown var(--duration-normal) var(--ease-out);
+  --animation-scale-in: scaleIn var(--duration-normal) var(--ease-out);
+  --animation-spin: spin 1s linear infinite;
+}
+
+/* Breakpoints */
+
+:root {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  
+  /* Z-Index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1100;
+  --z-index-fixed: 1200;
+  --z-index-modal-backdrop: 1300;
+  --z-index-modal: 1400;
+  --z-index-popover: 1500;
+  --z-index-tooltip: 1600;
+}
 
 /* Base Styles */
-@import url('./base/reset.css');
-@import url('./base/typography.css');
-@import url('./base/base.css');
+
+/* Reset CSS
+ * WTR Energia Solar
+ * Normalize and reset styles
+ */
+
+/* Box sizing */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+
+ol, ul {
+  list-style: none;
+}
+
+/* Remove link styles */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images responsive */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Inherit fonts */
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Remove button styles */
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove input styles */
+
+input {
+  border: none;
+  outline: none;
+}
+
+/* Set core body styles */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-md);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Skip link for accessibility */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-sm) var(--spacing-md);
+  z-index: var(--z-index-tooltip);
+  transition: top var(--transition-normal);
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Typography Base
+ * WTR Energia Solar
+ */
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: var(--font-size-5xl);
+}
+
+h2 {
+  font-size: var(--font-size-4xl);
+}
+
+h3 {
+  font-size: var(--font-size-3xl);
+}
+
+h4 {
+  font-size: var(--font-size-2xl);
+}
+
+h5 {
+  font-size: var(--font-size-xl);
+}
+
+h6 {
+  font-size: var(--font-size-lg);
+}
+
+/* Body text */
+
+p {
+  margin-bottom: var(--spacing-md);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Links */
+
+a {
+  color: var(--color-primary);
+  transition: color var(--transition-normal);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary-dark);
+}
+
+/* Strong and bold */
+
+strong, b {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Italic */
+
+em, i {
+  font-style: italic;
+}
+
+/* Blockquote */
+
+blockquote {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md);
+  border-left: 4px solid var(--color-primary);
+  background-color: var(--color-background-alt);
+}
+
+/* Code */
+
+code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-px) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+}
+
+pre {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+/* Lists */
+
+ul, ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-xl);
+}
+
+li {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Base Styles
+ * WTR Energia Solar
+ */
+
+/* Container */
+
+.container {
+  width: 100%;
+  max-width: var(--breakpoint-2xl);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Grid system */
+
+.grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.grid-cols-1 { grid-template-columns: 1fr; }
+
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Flex utilities */
+
+.flex {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* Section spacing */
+
+.section {
+  padding: var(--spacing-3xl) 0;
+}
+
+.section--sm {
+  padding: var(--spacing-xl) 0;
+}
+
+.section--lg {
+  padding: var(--spacing-4xl) 0;
+}
+
+/* Text alignment */
+
+.text-center { text-align: center; }
+
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+/* Display utilities */
+
+.hidden {
+  display: none !important;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Position utilities */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/* Overflow utilities */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+/* Z-index utilities */
+
+.z-10 { z-index: var(--z-index-dropdown); }
+
+.z-20 { z-index: var(--z-index-sticky); }
+
+.z-30 { z-index: var(--z-index-fixed); }
+
+.z-40 { z-index: var(--z-index-modal); }
+
+.z-50 { z-index: var(--z-index-tooltip); }
+
+/* Transitions */
+
+.transition {
+  transition: all var(--transition-normal);
+}
+
+.transition-fast {
+  transition: all var(--transition-fast);
+}
+
+/* Transform utilities */
+
+.transform {
+  transform: translateZ(0);
+}
+
+/* Object fit */
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Aspect ratios */
+
+.aspect-video {
+  aspect-ratio: 16/9;
+}
+
+.aspect-square {
+  aspect-ratio: 1/1;
+}
 
 /* Component Styles */
-@import url('./components/buttons.css');
-@import url('./components/cards.css');
-@import url('./components/forms.css');
-@import url('./components/navigation.css');
-@import url('./components/ui.css');
+
+/* Button Component
+ * WTR Energia Solar
+ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-align: center;
+  gap: var(--spacing-sm);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Primary Button */
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button */
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus {
+  background-color: var(--color-secondary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Outline Button */
+
+.btn--outline {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn--outline:hover,
+.btn--outline:focus {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+/* Ghost Button */
+
+.btn--ghost {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus {
+  background-color: var(--color-gray-100);
+}
+
+/* Icon Button */
+
+.btn--icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn--icon .btn__icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Button sizes */
+
+.btn--sm {
+  padding: var(--spacing-1-5) var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
+.btn--lg {
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: var(--font-size-lg);
+}
+
+/* Button block */
+
+.btn--block {
+  width: 100%;
+}
+
+/* Button with icon */
+
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Component
+ * WTR Energia Solar
+ */
+
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+/* Service Card */
+
+.card--service {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.card--service .card__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-light);
+  border-radius: var(--radius-full);
+}
+
+.card--service .card__icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--color-primary);
+}
+
+.card--service .card__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.card--service .card__description {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.card--service .card__link {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.card--service .card__link:hover {
+  text-decoration: underline;
+}
+
+/* Project Card */
+
+.card--project {
+  position: relative;
+}
+
+.card--project .card__image {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card--project .card__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: var(--color-white);
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-md);
+}
+
+.card--project .card__title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-1-5);
+}
+
+.card--project .card__meta {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+}
+
+/* Testimonial Card */
+
+.card--testimonial {
+  padding: var(--spacing-lg);
+  background-color: var(--color-background-alt);
+}
+
+.card--testimonial .card__quote {
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+.card--testimonial .card__quote::before {
+  content: '\201C';
+  font-size: 4rem;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  color: var(--color-primary);
+  opacity: 0.2;
+}
+
+.card--testimonial .card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.card--testimonial .card__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card--testimonial .card__name {
+  display: block;
+  font-weight: var(--font-weight-semibold);
+}
+
+.card--testimonial .card__location {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+
+/* Benefit Card */
+
+.card--benefit {
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.card--benefit .card__icon {
+  margin-bottom: var(--spacing-md);
+}
+
+.card--benefit .card__icon img {
+  width: 70px;
+  height: 92px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card--benefit .card__description {
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Form Component
+ * WTR Energia Solar
+ */
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-md);
+  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--border-color-focus);
+  box-shadow: var(--shadow-focus);
+}
+
+.form-input::-moz-placeholder, .form-textarea::-moz-placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-error {
+  display: block;
+  margin-top: var(--spacing-sm);
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+}
+
+/* Checkbox */
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+}
+
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox__checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+}
+
+.checkbox__input:checked + .checkbox__checkmark {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.checkbox__input:checked + .checkbox__checkmark::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  border: solid var(--color-white);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Radio */
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+}
+
+.radio__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio__checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+}
+
+.radio__input:checked + .radio__checkmark {
+  border-color: var(--color-primary);
+}
+
+.radio__input:checked + .radio__checkmark::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+/* Navigation Component
+ * WTR Energia Solar
+ */
+
+/* Navbar */
+
+.navbar {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-sticky);
+}
+
+.navbar__container {
+  max-width: var(--breakpoint-2xl);
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__brand img {
+  height: 40px;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.navbar__link {
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-normal);
+  position: relative;
+}
+
+.navbar__link:hover,
+.navbar__link:focus {
+  color: var(--color-primary);
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-normal);
+}
+
+.navbar__link:hover::after,
+.navbar__link:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-sm);
+}
+
+.navbar__hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+  position: relative;
+}
+
+.navbar__hamburger::before,
+.navbar__hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+}
+
+.navbar__hamburger::before {
+  top: -8px;
+}
+
+.navbar__hamburger::after {
+  top: 8px;
+}
+
+/* Mobile menu */
+
+@media (max-width: 768px) {
+  .navbar__menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition-normal);
+  }
+
+  .navbar__menu--active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+  padding: var(--spacing-md) 0;
+}
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: '/';
+  margin-left: var(--spacing-sm);
+  color: var(--color-text-light);
+}
+
+.breadcrumb__link {
+  color: var(--color-primary);
+}
+
+.breadcrumb__current {
+  color: var(--color-text-light);
+}
+
+/* UI Components
+ * WTR Energia Solar
+ */
+
+/* Alert */
+
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.alert--success {
+  background-color: var(--color-success-light);
+  border: 1px solid var(--color-success);
+}
+
+.alert--warning {
+  background-color: var(--color-warning-light);
+  border: 1px solid var(--color-warning);
+}
+
+.alert--error {
+  background-color: var(--color-error-light);
+  border: 1px solid var(--color-error);
+}
+
+.alert--info {
+  background-color: var(--color-info-light);
+  border: 1px solid var(--color-info);
+}
+
+.alert__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.alert__title {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-1-5);
+}
+
+/* Toast */
+
+.toast {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  right: var(--spacing-xl);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  z-index: var(--z-index-tooltip);
+}
+
+.toast--active {
+  transform: translateX(0);
+}
+
+.toast--success {
+  background-color: var(--color-success);
+}
+
+.toast--error {
+  background-color: var(--color-error);
+}
+
+.toast__close {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  margin-left: var(--spacing-md);
+}
+
+/* Badge */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-1-5) var(--spacing-sm);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.badge--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.badge--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.badge--success {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.badge--warning {
+  background-color: var(--color-warning);
+  color: var(--color-text);
+}
+
+/* Loading */
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xl);
+}
+
+.loading__spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-gray-300);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Skeleton */
+
+.skeleton {
+  background: linear-gradient(90deg, var(--color-gray-200) 25%, var(--color-gray-300) 50%, var(--color-gray-200) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+.skeleton__image {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-lg);
+}
+
+.skeleton__line {
+  height: 16px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.skeleton__line--short {
+  width: 60%;
+}
+
+/* Empty State */
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-3xl);
+}
+
+.empty-state__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-lg);
+  opacity: 0.5;
+}
+
+.empty-state__title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.empty-state__description {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--z-index-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+}
+
+.modal--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-overlay);
+}
+
+.modal__content {
+  position: relative;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: var(--z-index-modal);
+}
+
+.modal__header {
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal__title {
+  margin: 0;
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  padding: var(--spacing-sm);
+  cursor: pointer;
+}
+
+.modal__body {
+  padding: var(--spacing-lg);
+}
+
+.modal__footer {
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--color-gray-200);
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: flex-end;
+}
+
+/* Animations */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 /* Utility Classes */
-@import url('./utilities/helpers.css');
+
+/* Helper Utilities
+ * WTR Energia Solar
+ */
+
+/* Text colors */
+
+.text-primary { color: var(--color-primary); }
+
+.text-secondary { color: var(--color-secondary); }
+
+.text-accent { color: var(--color-accent); }
+
+.text-success { color: var(--color-success); }
+
+.text-warning { color: var(--color-warning); }
+
+.text-error { color: var(--color-error); }
+
+.text-muted { color: var(--color-text-muted); }
+
+.text-light { color: var(--color-text-light); }
+
+/* Background colors */
+
+.bg-primary { background-color: var(--color-primary); }
+
+.bg-secondary { background-color: var(--color-secondary); }
+
+.bg-accent { background-color: var(--color-accent); }
+
+.bg-success { background-color: var(--color-success); }
+
+.bg-warning { background-color: var(--color-warning); }
+
+.bg-error { background-color: var(--color-error); }
+
+.bg-light { background-color: var(--color-background-alt); }
+
+.bg-dark { background-color: var(--color-gray-900); }
+
+/* Border radius */
+
+.rounded-sm { border-radius: var(--radius-sm); }
+
+.rounded-md { border-radius: var(--radius-md); }
+
+.rounded-lg { border-radius: var(--radius-lg); }
+
+.rounded-xl { border-radius: var(--radius-xl); }
+
+.rounded-full { border-radius: var(--radius-full); }
+
+/* Spacing */
+
+.m-0 { margin: 0; }
+
+.m-xs { margin: var(--spacing-xs); }
+
+.m-sm { margin: var(--spacing-sm); }
+
+.m-md { margin: var(--spacing-md); }
+
+.m-lg { margin: var(--spacing-lg); }
+
+.m-xl { margin: var(--spacing-xl); }
+
+.p-0 { padding: 0; }
+
+.p-xs { padding: var(--spacing-xs); }
+
+.p-sm { padding: var(--spacing-sm); }
+
+.p-md { padding: var(--spacing-md); }
+
+.p-lg { padding: var(--spacing-lg); }
+
+.p-xl { padding: var(--spacing-xl); }
+
+/* Opacity */
+
+.opacity-0 { opacity: 0; }
+
+.opacity-25 { opacity: 0.25; }
+
+.opacity-50 { opacity: 0.5; }
+
+.opacity-75 { opacity: 0.75; }
+
+.opacity-100 { opacity: 1; }
+
+/* Visibility */
+
+.visible { visibility: visible; }
+
+.invisible { visibility: hidden; }
+
+/* Overflow */
+
+.overflow-hidden { overflow: hidden; }
+
+.overflow-x-auto { overflow-x: auto; }
+
+.overflow-y-auto { overflow-y: auto; }
+
+/* Position */
+
+.relative { position: relative; }
+
+.absolute { position: absolute; }
+
+.fixed { position: fixed; }
+
+.sticky { position: sticky; }
+
+/* Top/right/bottom/left */
+
+.top-0 { top: 0; }
+
+.right-0 { right: 0; }
+
+.bottom-0 { bottom: 0; }
+
+.left-0 { left: 0; }
+
+/* Flexbox */
+
+.flex { display: flex; }
+
+.inline-flex { display: inline-flex; }
+
+.flex-row { flex-direction: row; }
+
+.flex-col { flex-direction: column; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.items-center { align-items: center; }
+
+.items-start { align-items: flex-start; }
+
+.items-end { align-items: flex-end; }
+
+.justify-center { justify-content: center; }
+
+.justify-between { justify-content: space-between; }
+
+.justify-around { justify-content: space-around; }
+
+.justify-start { justify-content: flex-start; }
+
+.justify-end { justify-content: flex-end; }
+
+/* Grid */
+
+.grid { display: grid; }
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+.gap-0 { gap: 0; }
+
+.gap-sm { gap: var(--spacing-sm); }
+
+.gap-md { gap: var(--spacing-md); }
+
+.gap-lg { gap: var(--spacing-lg); }
+
+/* Display */
+
+.block { display: block; }
+
+.inline { display: inline; }
+
+.inline-block { display: inline-block; }
+
+.hidden { display: none; }
+
+/* Width/Height */
+
+.w-full { width: 100%; }
+
+.h-full { height: 100%; }
+
+.min-h-screen { min-height: 100vh; }
+
+/* Object fit */
+
+.object-contain { -o-object-fit: contain; object-fit: contain; }
+
+.object-cover { -o-object-fit: cover; object-fit: cover; }
+
+.object-center { -o-object-position: center; object-position: center; }
+
+/* Aspect ratio */
+
+.aspect-video { aspect-ratio: 16 / 9; }
+
+.aspect-square { aspect-ratio: 1 / 1; }
+
+/* Transitions */
+
+.transition { transition: all var(--transition-normal); }
+
+.transition-fast { transition: all var(--transition-fast); }
+
+.transition-slow { transition: all var(--transition-slow); }
+
+/* Transform */
+
+.transform { transform: translateZ(0); }
+
+.scale-105 { transform: scale(1.05); }
+
+.scale-110 { transform: scale(1.1); }
+
+.rotate-90 { transform: rotate(90deg); }
+
+.rotate-180 { transform: rotate(180deg); }
+
+.rotate-270 { transform: rotate(270deg); }
+
+/* Animation classes */
+
+.animate-fade-in { animation: fadeIn 0.3s ease-out; }
+
+.animate-slide-up { animation: slideUp 0.3s ease-out; }
+
+.animate-scale-in { animation: scaleIn 0.3s ease-out; }
+
+/* Scroll reveal */
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Hero Section */
+
 .hero {
   position: relative;
   min-height: 80vh;
@@ -79,6 +1827,7 @@
 }
 
 /* Footer */
+
 .footer {
   background-color: var(--color-gray-900);
   color: var(--color-white);
@@ -130,6 +1879,7 @@
 }
 
 /* Responsive */
+
 @media (max-width: 1024px) {
   .hero__title {
     font-size: var(--font-size-4xl);
@@ -145,6 +1895,7 @@
 }
 
 /* Chat Widget */
+
 .chat-widget {
   position: fixed;
   bottom: var(--spacing-xl);
@@ -268,6 +2019,7 @@
 }
 
 /* FAQ Styles */
+
 .faq__item {
   border: 1px solid var(--color-gray-200);
   border-radius: var(--radius-md);
@@ -318,5 +2070,3 @@
     bottom: 70px;
   }
 }
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3N0eWxlcy9tYWluLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIE1haW4gQ1NTXG4gKiBXVFIgRW5lcmdpYSBTb2xhclxuICogSW1wb3J0IGFsbCBzdHlsZXNcbiAqL1xuXG4vKiBEZXNpZ24gVG9rZW5zICovXG5AaW1wb3J0IHVybCgnLi4vYnJhbmRpbmcvcGFsZXR0ZS9pbmRleC5jc3MnKTtcblxuLyogQmFzZSBTdHlsZXMgKi9cbkBpbXBvcnQgdXJsKCcuL2Jhc2UvcmVzZXQuY3NzJyk7XG5AaW1wb3J0IHVybCgnLi9iYXNlL3R5cG9ncmFwaHkuY3NzJyk7XG5AaW1wb3J0IHVybCgnLi9iYXNlL2Jhc2UuY3NzJyk7XG5cbi8qIENvbXBvbmVudCBTdHlsZXMgKi9cbkBpbXBvcnQgdXJsKCcuL2NvbXBvbmVudHMvYnV0dG9ucy5jc3MnKTtcbkBpbXBvcnQgdXJsKCcuL2NvbXBvbmVudHMvY2FyZHMuY3NzJyk7XG5AaW1wb3J0IHVybCgnLi9jb21wb25lbnRzL2Zvcm1zLmNzcycpO1xuQGltcG9ydCB1cmwoJy4vY29tcG9uZW50cy9uYXZpZ2F0aW9uLmNzcycpO1xuQGltcG9ydCB1cmwoJy4vY29tcG9uZW50cy91aS5jc3MnKTtcblxuLyogVXRpbGl0eSBDbGFzc2VzICovXG5AaW1wb3J0IHVybCgnLi91dGlsaXRpZXMvaGVscGVycy5jc3MnKTtcblxuLyogSGVybyBTZWN0aW9uICovXG4uaGVybyB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgbWluLWhlaWdodDogODB2aDtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29sb3ItZ3JheS05MDApO1xuICBjb2xvcjogdmFyKC0tY29sb3Itd2hpdGUpO1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuXG4uaGVyb19fb3ZlcmxheSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICByaWdodDogMDtcbiAgYm90dG9tOiAwO1xuICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCB2YXIoLS1jb2xvci1vdmVybGF5KSwgdmFyKC0tY29sb3Itb3ZlcmxheS1saWdodCkpO1xuICB6LWluZGV4OiAxO1xufVxuXG4uaGVyb19fY29udGFpbmVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiAyO1xuICBtYXgtd2lkdGg6IHZhcigtLWJyZWFrcG9pbnQtMnhsKTtcbiAgbWFyZ2luOiAwIGF1dG87XG4gIHBhZGRpbmc6IHZhcigtLXNwYWNpbmctM3hsKSB2YXIoLS1zcGFjaW5nLWxnKTtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5oZXJvX19jb250ZW50IHtcbiAgbWF4LXdpZHRoOiA2MDBweDtcbn1cblxuLmhlcm9fX3RpdGxlIHtcbiAgZm9udC1zaXplOiB2YXIoLS1mb250LXNpemUtNXhsKTtcbiAgZm9udC1mYW1pbHk6IHZhcigtLWZvbnQtZmFtaWx5LXNlY29uZGFyeSk7XG4gIGZvbnQtd2VpZ2h0OiB2YXIoLS1mb250LXdlaWdodC1ib2xkKTtcbiAgbWFyZ2luLWJvdHRvbTogdmFyKC0tc3BhY2luZy1sZyk7XG4gIGxpbmUtaGVpZ2h0OiB2YXIoLS1saW5lLWhlaWdodC10aWdodCk7XG4gIGFuaW1hdGlvbjogZmFkZUluIDFzIGVhc2Utb3V0O1xufVxuXG4uaGVyb19fc3VidGl0bGUge1xuICBmb250LXNpemU6IHZhcigtLWZvbnQtc2l6ZS14bCk7XG4gIG1hcmdpbi1ib3R0b206IHZhcigtLXNwYWNpbmcteGwpO1xuICBvcGFjaXR5OiAwLjk7XG4gIGFuaW1hdGlvbjogc2xpZGVVcCAxcyBlYXNlLW91dCAwLjJzIGJvdGg7XG59XG5cbi5oZXJvX19hY3Rpb25zIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiB2YXIoLS1zcGFjaW5nLW1kKTtcbiAgZmxleC13cmFwOiB3cmFwO1xuICBhbmltYXRpb246IHNsaWRlVXAgMXMgZWFzZS1vdXQgMC40cyBib3RoO1xufVxuXG4vKiBGb290ZXIgKi9cbi5mb290ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1jb2xvci1ncmF5LTkwMCk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIHBhZGRpbmc6IHZhcigtLXNwYWNpbmctMnhsKSAwIDA7XG59XG5cbi5mb290ZXJfX2NvbnRhaW5lciB7XG4gIG1heC13aWR0aDogdmFyKC0tYnJlYWtwb2ludC0yeGwpO1xuICBtYXJnaW46IDAgYXV0bztcbiAgcGFkZGluZzogMCB2YXIoLS1zcGFjaW5nLWxnKTtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoNCwgMWZyKTtcbiAgZ2FwOiB2YXIoLS1zcGFjaW5nLXhsKTtcbn1cblxuLmZvb3Rlcl9fYnJhbmQgcCB7XG4gIG1hcmdpbi10b3A6IHZhcigtLXNwYWNpbmctbWQpO1xuICBvcGFjaXR5OiAwLjg7XG59XG5cbi5mb290ZXJfX2xpbmtzIGg0LFxuLmZvb3Rlcl9fY29udGFjdCBoNCB7XG4gIGZvbnQtc2l6ZTogdmFyKC0tZm9udC1zaXplLWxnKTtcbiAgbWFyZ2luLWJvdHRvbTogdmFyKC0tc3BhY2luZy1sZyk7XG59XG5cbi5mb290ZXJfX2xpbmtzIHVsIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgZ2FwOiB2YXIoLS1zcGFjaW5nLXNtKTtcbn1cblxuLmZvb3Rlcl9fbGlua3MgYSB7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIG9wYWNpdHk6IDAuODtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSB2YXIoLS10cmFuc2l0aW9uLW5vcm1hbCk7XG59XG5cbi5mb290ZXJfX2xpbmtzIGE6aG92ZXIge1xuICBvcGFjaXR5OiAxO1xufVxuXG4uZm9vdGVyX19ib3R0b20ge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBhZGRpbmc6IHZhcigtLXNwYWNpbmctbGcpIDA7XG4gIG1hcmdpbi10b3A6IHZhcigtLXNwYWNpbmcteGwpO1xuICBib3JkZXItdG9wOiAxcHggc29saWQgdmFyKC0tY29sb3ItZ3JheS03MDApO1xuICBmb250LXNpemU6IHZhcigtLWZvbnQtc2l6ZS1zbSk7XG59XG5cbi8qIFJlc3BvbnNpdmUgKi9cbkBtZWRpYSAobWF4LXdpZHRoOiAxMDI0cHgpIHtcbiAgLmhlcm9fX3RpdGxlIHtcbiAgICBmb250LXNpemU6IHZhcigtLWZvbnQtc2l6ZS00eGwpO1xuICB9XG5cbiAgLmhlcm9fX3N1YnRpdGxlIHtcbiAgICBmb250LXNpemU6IHZhcigtLWZvbnQtc2l6ZS1sZyk7XG4gIH1cblxuICAuZm9vdGVyX19jb250YWluZXIge1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDIsIDFmcik7XG4gIH1cbn1cblxuLyogQ2hhdCBXaWRnZXQgKi9cbi5jaGF0LXdpZGdldCB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgYm90dG9tOiB2YXIoLS1zcGFjaW5nLXhsKTtcbiAgcmlnaHQ6IHZhcigtLXNwYWNpbmcteGwpO1xuICB6LWluZGV4OiB2YXIoLS16LWluZGV4LXRvb2x0aXApO1xufVxuXG4uY2hhdC13aWRnZXRfX3RvZ2dsZSB7XG4gIHdpZHRoOiA2MHB4O1xuICBoZWlnaHQ6IDYwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29sb3ItcHJpbWFyeSk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBib3gtc2hhZG93OiB2YXIoLS1zaGFkb3ctbGcpO1xuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gdmFyKC0tdHJhbnNpdGlvbi1ub3JtYWwpO1xufVxuXG4uY2hhdC13aWRnZXRfX3RvZ2dsZTpob3ZlciB7XG4gIHRyYW5zZm9ybTogc2NhbGUoMS4xKTtcbn1cblxuLmNoYXQtd2lkZ2V0X19wYW5lbCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgYm90dG9tOiA4MHB4O1xuICByaWdodDogMDtcbiAgd2lkdGg6IDM1MHB4O1xuICBoZWlnaHQ6IDUwMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIGJvcmRlci1yYWRpdXM6IHZhcigtLXJhZGl1cy1sZyk7XG4gIGJveC1zaGFkb3c6IHZhcigtLXNoYWRvdy14bCk7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIG9wYWNpdHk6IDA7XG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDIwcHgpO1xuICB0cmFuc2l0aW9uOiBhbGwgdmFyKC0tdHJhbnNpdGlvbi1ub3JtYWwpO1xufVxuXG4uY2hhdC13aWRnZXRfX3BhbmVsLS1hY3RpdmUge1xuICBvcGFjaXR5OiAxO1xuICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMCk7XG59XG5cbi5jaGF0LXdpZGdldF9faGVhZGVyIHtcbiAgcGFkZGluZzogdmFyKC0tc3BhY2luZy1tZCk7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB2YXIoLS1jb2xvci1ncmF5LTIwMCk7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcbn1cblxuLmNoYXQtd2lkZ2V0X19zdGF0dXMge1xuICBmb250LXNpemU6IHZhcigtLWZvbnQtc2l6ZS1zbSk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci1zdWNjZXNzKTtcbn1cblxuLmNoYXQtd2lkZ2V0X19tZXNzYWdlcyB7XG4gIGZsZXg6IDE7XG4gIHBhZGRpbmc6IHZhcigtLXNwYWNpbmctbWQpO1xuICBvdmVyZmxvdy15OiBhdXRvO1xufVxuXG4uY2hhdC13aWRnZXRfX21lc3NhZ2Uge1xuICBtYXJnaW4tYm90dG9tOiB2YXIoLS1zcGFjaW5nLXNtKTtcbiAgbWF4LXdpZHRoOiA4MCU7XG59XG5cbi5jaGF0LXdpZGdldF9fbWVzc2FnZS0tYm90IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29sb3ItYmFja2dyb3VuZC1hbHQpO1xuICBwYWRkaW5nOiB2YXIoLS1zcGFjaW5nLXNtKSB2YXIoLS1zcGFjaW5nLW1kKTtcbiAgYm9yZGVyLXJhZGl1czogdmFyKC0tcmFkaXVzLW1kKTtcbn1cblxuLmNoYXQtd2lkZ2V0X19tZXNzYWdlLS11c2VyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29sb3ItcHJpbWFyeSk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci13aGl0ZSk7XG4gIHBhZGRpbmc6IHZhcigtLXNwYWNpbmctc20pIHZhcigtLXNwYWNpbmctbWQpO1xuICBib3JkZXItcmFkaXVzOiB2YXIoLS1yYWRpdXMtbWQpO1xuICBtYXJnaW4tbGVmdDogYXV0bztcbn1cblxuLmNoYXQtd2lkZ2V0X19xdWljay1yZXBsaWVzIHtcbiAgcGFkZGluZzogdmFyKC0tc3BhY2luZy1zbSk7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtd3JhcDogd3JhcDtcbiAgZ2FwOiB2YXIoLS1zcGFjaW5nLXNtKTtcbiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkIHZhcigtLWNvbG9yLWdyYXktMjAwKTtcbn1cblxuLmNoYXQtd2lkZ2V0X19xdWljay1yZXBseSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvbG9yLWdyYXktMTAwKTtcbiAgcGFkZGluZzogdmFyKC0tc3BhY2luZy0xLTUpIHZhcigtLXNwYWNpbmctc20pO1xuICBib3JkZXItcmFkaXVzOiB2YXIoLS1yYWRpdXMtZnVsbCk7XG4gIGZvbnQtc2l6ZTogdmFyKC0tZm9udC1zaXplLXNtKTtcbn1cblxuLmNoYXQtd2lkZ2V0X19mb3JtIHtcbiAgcGFkZGluZzogdmFyKC0tc3BhY2luZy1tZCk7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGdhcDogdmFyKC0tc3BhY2luZy1zbSk7XG4gIGJvcmRlci10b3A6IDFweCBzb2xpZCB2YXIoLS1jb2xvci1ncmF5LTIwMCk7XG59XG5cbi5jaGF0LXdpZGdldF9faW5wdXQge1xuICBmbGV4OiAxO1xuICBwYWRkaW5nOiB2YXIoLS1zcGFjaW5nLXNtKSB2YXIoLS1zcGFjaW5nLW1kKTtcbiAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tY29sb3ItZ3JheS0zMDApO1xuICBib3JkZXItcmFkaXVzOiB2YXIoLS1yYWRpdXMtZnVsbCk7XG59XG5cbi5jaGF0LXdpZGdldF9fc2VuZCB7XG4gIHdpZHRoOiA0MHB4O1xuICBoZWlnaHQ6IDQwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29sb3ItcHJpbWFyeSk7XG4gIGNvbG9yOiB2YXIoLS1jb2xvci13aGl0ZSk7XG59XG5cbi8qIEZBUSBTdHlsZXMgKi9cbi5mYXFfX2l0ZW0ge1xuICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1jb2xvci1ncmF5LTIwMCk7XG4gIGJvcmRlci1yYWRpdXM6IHZhcigtLXJhZGl1cy1tZCk7XG4gIG1hcmdpbi1ib3R0b206IHZhcigtLXNwYWNpbmctc20pO1xufVxuXG4uZmFxX19xdWVzdGlvbiB7XG4gIHBhZGRpbmc6IHZhcigtLXNwYWNpbmctbWQpO1xuICBmb250LXdlaWdodDogdmFyKC0tZm9udC13ZWlnaHQtbWVkaXVtKTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBsaXN0LXN0eWxlOiBub25lO1xufVxuXG4uZmFxX19xdWVzdGlvbjo6bWFya2VyIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxuLmZhcV9fYW5zd2VyIHtcbiAgcGFkZGluZzogMCB2YXIoLS1zcGFjaW5nLW1kKSB2YXIoLS1zcGFjaW5nLW1kKTtcbiAgY29sb3I6IHZhcigtLWNvbG9yLXRleHQtbGlnaHQpO1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgLmhlcm8ge1xuICAgIG1pbi1oZWlnaHQ6IDYwdmg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB9XG5cbiAgLmhlcm9fX2NvbnRhaW5lciB7XG4gICAgcGFkZGluZzogdmFyKC0tc3BhY2luZy14bCkgdmFyKC0tc3BhY2luZy1tZCk7XG4gIH1cblxuICAuaGVyb19fY29udGVudCB7XG4gICAgbWFyZ2luOiAwIGF1dG87XG4gIH1cblxuICAuaGVyb19fYWN0aW9ucyB7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIH1cblxuICAuZm9vdGVyX19jb250YWluZXIge1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xuICB9XG5cbiAgLmNoYXQtd2lkZ2V0X19wYW5lbCB7XG4gICAgd2lkdGg6IDMwMHB4O1xuICAgIGhlaWdodDogNDUwcHg7XG4gICAgYm90dG9tOiA3MHB4O1xuICB9XG59XG4iXX0= */
