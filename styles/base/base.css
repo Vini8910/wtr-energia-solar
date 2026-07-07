@@ -1,0 +1,138 @@
+/* Base Styles
+ * WTR Energia Solar
+ */
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--breakpoint-2xl);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Grid system */
+.grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.grid-cols-1 { grid-template-columns: 1fr; }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Flex utilities */
+.flex {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* Section spacing */
+.section {
+  padding: var(--spacing-3xl) 0;
+}
+
+.section--sm {
+  padding: var(--spacing-xl) 0;
+}
+
+.section--lg {
+  padding: var(--spacing-4xl) 0;
+}
+
+/* Text alignment */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Display utilities */
+.hidden {
+  display: none !important;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Position utilities */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/* Overflow utilities */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+/* Z-index utilities */
+.z-10 { z-index: var(--z-index-dropdown); }
+.z-20 { z-index: var(--z-index-sticky); }
+.z-30 { z-index: var(--z-index-fixed); }
+.z-40 { z-index: var(--z-index-modal); }
+.z-50 { z-index: var(--z-index-tooltip); }
+
+/* Transitions */
+.transition {
+  transition: all var(--transition-normal);
+}
+
+.transition-fast {
+  transition: all var(--transition-fast);
+}
+
+/* Transform utilities */
+.transform {
+  transform: translateZ(0);
+}
+
+/* Object fit */
+.object-cover {
+  object-fit: cover;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+/* Aspect ratios */
+.aspect-video {
+  aspect-ratio: 16/9;
+}
+
+.aspect-square {
+  aspect-ratio: 1/1;
+}

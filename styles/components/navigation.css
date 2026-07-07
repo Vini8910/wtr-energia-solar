@@ -1,0 +1,159 @@
+/* Navigation Component
+ * WTR Energia Solar
+ */
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-index-sticky);
+}
+
+.navbar__container {
+  max-width: var(--breakpoint-2xl);
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__brand img {
+  height: 40px;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.navbar__link {
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-normal);
+  position: relative;
+}
+
+.navbar__link:hover,
+.navbar__link:focus {
+  color: var(--color-primary);
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-normal);
+}
+
+.navbar__link:hover::after,
+.navbar__link:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-sm);
+}
+
+.navbar__hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+  position: relative;
+}
+
+.navbar__hamburger::before,
+.navbar__hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+}
+
+.navbar__hamburger::before {
+  top: -8px;
+}
+
+.navbar__hamburger::after {
+  top: 8px;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .navbar__menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition-normal);
+  }
+
+  .navbar__menu--active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: var(--spacing-md) 0;
+}
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: '/';
+  margin-left: var(--spacing-sm);
+  color: var(--color-text-light);
+}
+
+.breadcrumb__link {
+  color: var(--color-primary);
+}
+
+.breadcrumb__current {
+  color: var(--color-text-light);
+}

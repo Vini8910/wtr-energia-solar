@@ -1,0 +1,30 @@
+/* Design Tokens - Animation
+ * WTR Energia Solar
+ */
+
+:root {
+  /* Duration */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+  
+  /* Easing */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Transition */
+  --transition-fast: var(--duration-fast) var(--ease-out);
+  --transition-normal: var(--duration-normal) var(--ease-out);
+  --transition-slow: var(--duration-slow) var(--ease-out);
+  
+  /* Animation Presets */
+  --animation-fade-in: fadeIn var(--duration-normal) var(--ease-out);
+  --animation-fade-out: fadeOut var(--duration-normal) var(--ease-out);
+  --animation-slide-up: slideUp var(--duration-normal) var(--ease-out);
+  --animation-slide-down: slideDown var(--duration-normal) var(--ease-out);
+  --animation-scale-in: scaleIn var(--duration-normal) var(--ease-out);
+  --animation-spin: spin 1s linear infinite;
+}

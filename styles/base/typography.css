@@ -1,0 +1,100 @@
+/* Typography Base
+ * WTR Energia Solar
+ */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: var(--font-size-5xl);
+}
+
+h2 {
+  font-size: var(--font-size-4xl);
+}
+
+h3 {
+  font-size: var(--font-size-3xl);
+}
+
+h4 {
+  font-size: var(--font-size-2xl);
+}
+
+h5 {
+  font-size: var(--font-size-xl);
+}
+
+h6 {
+  font-size: var(--font-size-lg);
+}
+
+/* Body text */
+p {
+  margin-bottom: var(--spacing-md);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  transition: color var(--transition-normal);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary-dark);
+}
+
+/* Strong and bold */
+strong, b {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Italic */
+em, i {
+  font-style: italic;
+}
+
+/* Blockquote */
+blockquote {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md);
+  border-left: 4px solid var(--color-primary);
+  background-color: var(--color-background-alt);
+}
+
+/* Code */
+code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-px) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+}
+
+pre {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-xl);
+}
+
+li {
+  margin-bottom: var(--spacing-sm);
+}

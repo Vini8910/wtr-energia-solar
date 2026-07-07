@@ -1,0 +1,153 @@
+/* Card Component
+ * WTR Energia Solar
+ */
+
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+/* Service Card */
+.card--service {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.card--service .card__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-light);
+  border-radius: var(--radius-full);
+}
+
+.card--service .card__icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--color-primary);
+}
+
+.card--service .card__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.card--service .card__description {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.card--service .card__link {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.card--service .card__link:hover {
+  text-decoration: underline;
+}
+
+/* Project Card */
+.card--project {
+  position: relative;
+}
+
+.card--project .card__image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card--project .card__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: var(--color-white);
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-md);
+}
+
+.card--project .card__title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-1-5);
+}
+
+.card--project .card__meta {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+}
+
+/* Testimonial Card */
+.card--testimonial {
+  padding: var(--spacing-lg);
+  background-color: var(--color-background-alt);
+}
+
+.card--testimonial .card__quote {
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+}
+
+.card--testimonial .card__quote::before {
+  content: '\201C';
+  font-size: 4rem;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  color: var(--color-primary);
+  opacity: 0.2;
+}
+
+.card--testimonial .card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.card--testimonial .card__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card--testimonial .card__name {
+  display: block;
+  font-weight: var(--font-weight-semibold);
+}
+
+.card--testimonial .card__location {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+
+/* Benefit Card */
+.card--benefit {
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.card--benefit .card__icon {
+  margin-bottom: var(--spacing-md);
+}
+
+.card--benefit .card__icon img {
+  width: 70px;
+  height: 92px;
+  object-fit: contain;
+}
+
+.card--benefit .card__description {
+  font-weight: var(--font-weight-semibold);
+}

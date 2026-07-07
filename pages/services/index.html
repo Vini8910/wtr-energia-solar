@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serviços de Energia Solar - Residencial, Comercial e Industrial. Soluções completas para reduzir sua conta de energia.">
+  <title>Serviços - WTR Energia Solar</title>
+  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main" class="skip-link screen-reader-text">Ir para o conteúdo</a>
+
+  <header class="header">
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+      <div class="navbar__container">
+        <a href="/" class="navbar__brand" aria-label="WTR Energia Solar">
+          <img src="../../branding/logo/wtr-logo.svg" alt="WTR Energia Solar" width="180" height="40">
+        </a>
+        <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbar-menu">
+          <span class="navbar__hamburger"></span>
+        </button>
+        <ul class="navbar__menu" id="navbar-menu">
+          <li><a href="/" class="navbar__link">Home</a></li>
+          <li><a href="/pages/services/" class="navbar__link">Serviços</a></li>
+          <li><a href="/pages/about/" class="navbar__link">Sobre</a></li>
+          <li><a href="/pages/projects/" class="navbar__link">Projetos</a></li>
+          <li><a href="/pages/contact/" class="navbar__link">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="main">
+    <section class="hero" style="min-height: 50vh; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Nossos Serviços</h1>
+          <p class="hero__subtitle">Soluções completas em energia solar para todos os segmentos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tabs" style="margin-top: var(--spacing-2xl);">
+          <div class="tabs__wrapper" role="tablist">
+            <button class="tabs__button tabs__button--active" data-tab="residential" role="tab" aria-selected="true">Residencial</button>
+            <button class="tabs__button" data-tab="commercial" role="tab" aria-selected="false">Comercial</button>
+            <button class="tabs__button" data-tab="industrial" role="tab" aria-selected="false">Industrial</button>
+          </div>
+          
+          <div class="tabs__content">
+            <div class="tabs__panel tabs__panel--active" id="residential" role="tabpanel">
+              <div class="grid grid-cols-2">
+                <div>
+                  <h3>Sistemas Residenciais</h3>
+                  <p>Instalação de placas solares em residências com redução de até 95% na conta de energia. Ideal para famílias que buscam economia e sustentabilidade.</p>
+                  <ul>
+                    <li>Potência: 3kWp a 10kWp</li>
+                    <li>Pagamento em até 60x</li>
+                    <li>Monitoramento via app</li>
+                  </ul>
+                </div>
+                <img src="../../assets/images/residential-placeholder.svg" alt="Sistema solar residencial" class="rounded-lg">
+              </div>
+            </div>
+            
+            <div class="tabs__panel" id="commercial" role="tabpanel" hidden>
+              <div class="grid grid-cols-2">
+                <div>
+                  <h3>Sistemas Comerciais</h3>
+                  <p>Soluções para pequenas e médias empresas, reduzindo custos operacionais e aumentando competitividade no mercado.</p>
+                  <ul>
+                    <li>Potência: 10kWp a 100kWp</li>
+                    <li>Financiamento especial</li>
+                    <li>Retorno em 3-5 anos</li>
+                  </ul>
+                </div>
+                <img src="../../assets/images/commercial-placeholder.svg" alt="Sistema solar comercial" class="rounded-lg">
+              </div>
+            </div>
+            
+            <div class="tabs__panel" id="industrial" role="tabpanel" hidden>
+              <div class="grid grid-cols-2">
+                <div>
+                  <h3>Sistemas Industriais</h3>
+                  <p>Projetos customizados para indústrias com alto consumo de energia, incluindo usinas solares e sistemas híbridos.</p>
+                  <ul>
+                    <li>Potência: 100kWp a 5MWp</li>
+                    <li>Estudo de viabilidade</li>
+                    <li>Manutenção preventiva</li>
+                  </ul>
+                </div>
+                <img src="../../assets/images/industrial-placeholder.svg" alt="Sistema solar industrial" class="rounded-lg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <img src="../../branding/logo/wtr-logo-white.svg" alt="WTR Energia Solar" width="180" height="40">
+        <p>Energia limpa para um futuro melhor</p>
+      </div>
+      <div class="footer__links">
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/services/">Serviços</a></li>
+          <li><a href="/pages/about/">Sobre</a></li>
+          <li><a href="/pages/projects/">Projetos</a></li>
+          <li><a href="/pages/contact/">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contato</h4>
+        <p>(11) 99999-9999</p>
+        <p>contato@wtrenergiasolar.com.br</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 WTR Energia Solar. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../../scripts/main.js" type="module"></script>
+</body>
+</html>

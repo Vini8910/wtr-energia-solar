@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.wtrenergiasolar.com.br/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/

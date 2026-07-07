@@ -1,0 +1,89 @@
+/* Reset CSS
+ * WTR Energia Solar
+ * Normalize and reset styles
+ */
+
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ol, ul {
+  list-style: none;
+}
+
+/* Remove link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Inherit fonts */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Remove button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove input styles */
+input {
+  border: none;
+  outline: none;
+}
+
+/* Set core body styles */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-md);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-sm) var(--spacing-md);
+  z-index: var(--z-index-tooltip);
+  transition: top var(--transition-normal);
+}
+
+.skip-link:focus {
+  top: 6px;
+}

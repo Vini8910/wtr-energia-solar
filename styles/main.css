@@ -1,0 +1,320 @@
+/* Main CSS
+ * WTR Energia Solar
+ * Import all styles
+ */
+
+/* Design Tokens */
+@import url('../branding/palette/index.css');
+
+/* Base Styles */
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+@import url('./base/base.css');
+
+/* Component Styles */
+@import url('./components/buttons.css');
+@import url('./components/cards.css');
+@import url('./components/forms.css');
+@import url('./components/navigation.css');
+@import url('./components/ui.css');
+
+/* Utility Classes */
+@import url('./utilities/helpers.css');
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--color-overlay), var(--color-overlay-light));
+  z-index: 1;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 2;
+  max-width: var(--breakpoint-2xl);
+  margin: 0 auto;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  width: 100%;
+}
+
+.hero__content {
+  max-width: 600px;
+}
+
+.hero__title {
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-lg);
+  line-height: var(--line-height-tight);
+  animation: fadeIn 1s ease-out;
+}
+
+.hero__subtitle {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.9;
+  animation: slideUp 1s ease-out 0.2s both;
+}
+
+.hero__actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  animation: slideUp 1s ease-out 0.4s both;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  padding: var(--spacing-2xl) 0 0;
+}
+
+.footer__container {
+  max-width: var(--breakpoint-2xl);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.footer__brand p {
+  margin-top: var(--spacing-md);
+  opacity: 0.8;
+}
+
+.footer__links h4,
+.footer__contact h4 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer__links ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer__links a {
+  color: var(--color-white);
+  opacity: 0.8;
+  transition: opacity var(--transition-normal);
+}
+
+.footer__links a:hover {
+  opacity: 1;
+}
+
+.footer__bottom {
+  text-align: center;
+  padding: var(--spacing-lg) 0;
+  margin-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-gray-700);
+  font-size: var(--font-size-sm);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero__title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero__subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Chat Widget */
+.chat-widget {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  right: var(--spacing-xl);
+  z-index: var(--z-index-tooltip);
+}
+
+.chat-widget__toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-normal);
+}
+
+.chat-widget__toggle:hover {
+  transform: scale(1.1);
+}
+
+.chat-widget__panel {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 350px;
+  height: 500px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all var(--transition-normal);
+}
+
+.chat-widget__panel--active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.chat-widget__header {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--color-gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-widget__status {
+  font-size: var(--font-size-sm);
+  color: var(--color-success);
+}
+
+.chat-widget__messages {
+  flex: 1;
+  padding: var(--spacing-md);
+  overflow-y: auto;
+}
+
+.chat-widget__message {
+  margin-bottom: var(--spacing-sm);
+  max-width: 80%;
+}
+
+.chat-widget__message--bot {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+}
+
+.chat-widget__message--user {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-left: auto;
+}
+
+.chat-widget__quick-replies {
+  padding: var(--spacing-sm);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.chat-widget__quick-reply {
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-1-5) var(--spacing-sm);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+}
+
+.chat-widget__form {
+  padding: var(--spacing-md);
+  display: flex;
+  gap: var(--spacing-sm);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.chat-widget__input {
+  flex: 1;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-full);
+}
+
+.chat-widget__send {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* FAQ Styles */
+.faq__item {
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.faq__question {
+  padding: var(--spacing-md);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq__question::marker {
+  display: none;
+}
+
+.faq__answer {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+  color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    text-align: center;
+  }
+
+  .hero__container {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .hero__content {
+    margin: 0 auto;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-widget__panel {
+    width: 300px;
+    height: 450px;
+    bottom: 70px;
+  }
+}
