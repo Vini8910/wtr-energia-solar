@@ -34,12 +34,14 @@ assert(skipLink !== null, 'Skip link should exist');
 
 // Test: Navbar has aria-label
 const navbar = document.querySelector('.navbar');
+assert(navbar !== null, 'Navbar should exist');
 assert(navbar.getAttribute('aria-label') === 'Menu principal', 'Navbar should have aria-label "Menu principal"');
 
 // Test: All images have alt
 const images = document.querySelectorAll('img');
 images.forEach(img => {
-  assert(img.hasAttribute('alt'), `Image should have alt attribute: ${img.src || img.getAttribute('src') || 'unknown'}`);
+  const src = img.getAttribute('src') || 'unknown';
+  assert(img.hasAttribute('alt'), `Image should have alt attribute: ${src}`);
 });
 
 // Test: All form inputs have labels
@@ -66,12 +68,6 @@ const links = document.querySelectorAll('a');
 links.forEach(link => {
   assert(link.hasAttribute('href'), `Link should have href attribute`);
 });
-
-// Test: Color contrast (placeholder for future implementation)
-const checkContrast = (bg, text) => {
-  // Simplified contrast check - to be implemented with actual color values
-  return true;
-};
 
 console.log('\n--- Accessibility Test Summary ---');
 console.log(`Tests passed: ${testsPassed}`);
