@@ -4,6 +4,20 @@
  */
 
 export const initChat = () => {
+  // Predefined responses
+  const responses = {
+    greeting: 'Olá! Bem-vindo à WTR Energia Solar. Como posso ajudar você hoje?',
+    energia_solar: 'A energia solar é uma fonte renovável e sustentável que converte a luz do sol em eletricidade através de placas fotovoltaicas. Nossos sistemas reduzem sua conta de energia em até 95% e têm vida útil de 25+ anos.',
+    orcamento: 'Para solicitar um orçamento personalizado, preciso de algumas informações: nome, telefone, e-mail, cidade e tipo do imóvel. Você pode preencher nosso formulário de contato ou me fornecer esses dados que eu registro para nossa equipe entrar em contato.',
+    financiamento: 'Oferecemos diversas opções de financiamento para facilitar seu investimento em energia solar. Trabalhamos com bancos públicos e privados, e muitas vezo você pode pagar a parcela com a economia obtida na conta de luz.',
+    cidades: 'Atendemos diversas cidades no Brasil. Principais regiões: São Paulo, Rio de Janeiro, Belo Horizonte, Porto Alegre, Curitiba, e muito mais. Consulte nossa equipe para verificar disponibilidade na sua região.',
+    equipamentos: 'Utilizamos equipamentos de alta qualidade: placas fotovoltaicas monocristalinas, inversores string e microinversores, estruturas em alumínio anodizado e sistema de monitoramento online.',
+    instalacao: 'O processo de instalação inclui: 1) Análise do local e consumo; 2) Projeto personalizado; 3) Aprovação e financiamento; 4) Instalação dos equipamentos; 5) Conexão e testes; 6) Monitoramento contínuo.',
+    garantia: 'Oferecemos garantia completa: 25 anos nas placas fotovoltaicas, 10 anos no inversor, 5 anos para a instalação e 10 anos para o serviço de manutenção.',
+    manutencao: 'Nossa manutenção preventiva inclui limpeza das placas, verificação de conexões, monitoramento do sistema e suporte técnico 24/7. O sistema tem poucos componentes móveis, exigindo pouca manutenção.',
+    default: 'Desculpe, não entendi sua pergunta. Posso ajudar com informações sobre energia solar, orçamentos, financiamento ou nossos serviços. O que você gostaria de saber?'
+  };
+
   // Create chat widget HTML
   const chatHTML = `
     <div class="chat-widget" id="chat-widget">
@@ -28,7 +42,7 @@ export const initChat = () => {
         
         <div class="chat-widget__messages" id="chat-messages">
           <div class="chat-widget__message chat-widget__message--bot">
-            <p>Olá! Bem-vindo à WTR Energia Solar. Como posso ajudar?</p>
+            <p>${responses.greeting}</p>
           </div>
         </div>
         
@@ -75,30 +89,41 @@ export const initChat = () => {
   quickReplies.forEach(btn => {
     btn.addEventListener('click', () => {
       const question = btn.dataset.question;
-      handleQuestion(question);
+      addMessage(responses[question] || responses.default, 'bot');
     });
   });
 
   // Form submit
-  form.addEventListener('submit', async e => {
+  form.addEventListener('submit', e => {
     e.preventDefault();
     const message = input.value.trim();
     if (message) {
       addMessage(message, 'user');
       input.value = '';
       
-      // Call OpenAI API
-      try {
-        const response = await fetch('/api/chat/openai.php', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message, context: {} })
-        });
-        const data = await response.json();
-        addMessage(data.response || 'Desculpe, não consegui processar sua solicitação.', 'bot');
-      } catch (error) {
-        addMessage('Erro de conexão. Tente novamente.', 'bot');
+      // Simple keyword matching for demo purposes
+      const lowerMessage = message.toLowerCase();
+      let response = responses.default;
+      
+      if (lowerMessage.includes('energia solar') || lowerMessage.includes('solar')) {
+        response = responses.energia_solar;
+      } else if (lowerMessage.includes('orçamento') || lowerMessage.includes('orcamento') || lowerMessage.includes('preço') || lowerMessage.includes('preço')) {
+        response = responses.orcamento;
+      } else if (lowerMessage.includes('financiamento') || lowerMessage.includes('parcela') || lowerMessage.includes('pagamento')) {
+        response = responses.financiamento;
+      } else if (lowerMessage.includes('cidade') || lowerMessage.includes('atend')) {
+        response = responses.cidades;
+      } else if (lowerMessage.includes('equipamento') || lowerMessage.includes('placa') || lowerMessage.includes('inversor')) {
+        response = responses.equipamentos;
+      } else if (lowerMessage.includes('instalação') || lowerMessage.includes('instalar')) {
+        response = responses.instalacao;
+      } else if (lowerMessage.includes('garantia')) {
+        response = responses.garantia;
+      } else if (lowerMessage.includes('manutenção') || lowerMessage.includes('manutencao')) {
+        response = responses.manutencao;
       }
+      
+      addMessage(response, 'bot');
     }
   });
 
@@ -109,15 +134,5 @@ export const initChat = () => {
     messageEl.innerHTML = `<p>${text}</p>`;
     messages.appendChild(messageEl);
     messages.scrollTop = messages.scrollHeight;
-  };
-
-  // Handle predefined questions
-  const handleQuestion = question => {
-    const responses = {
-      energia_solar: 'A energia solar é captada por placas fotovoltaicas e converte luz em eletricidade. Reduza sua conta em até 95%!',
-      orcamento: 'Para orçamento, preencha nosso formulário ou informe: nome, telefone, e-mail, cidade e tipo do imóvel.',
-      financiamento: 'Oferecemos financiamento com parcelas que cabem no seu orçamento. Muitas vezes a economia paga a parcela!'
-    };
-    addMessage(responses[question] || 'Como posso ajudar?', 'bot');
   };
 };
