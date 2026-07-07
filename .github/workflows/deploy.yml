@@ -42,6 +42,8 @@ jobs:
           cp dist/styles/main.css deploy/styles/
           cp dist/scripts/main.js deploy/scripts/
           cp -r pages deploy/ || true
+          cp sitemap.xml deploy/ || true
+          cp robots.txt deploy/ || true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
