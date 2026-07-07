@@ -32,16 +32,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
     
-    // Preparar payload para OpenAI
-    $payload = [
-        'model' => 'gpt-4',
-        'messages' => [
-            ['role' => 'system', 'content' => $SYSTEM_PROMPT],
-            ['role' => 'user', 'content' => $message]
-        ],
-        'temperature' => 0.7,
-        'max_tokens' => 500
-    ];
+// Preparar payload para OpenAI
+  $payload = [
+    'model' => $OPENAI_MODEL,
+    'messages' => [
+      ['role' => 'system', 'content' => $SYSTEM_PROMPT],
+      ['role' => 'user', 'content' => $message]
+    ],
+    'temperature' => $OPENAI_TEMPERATURE,
+    'max_tokens' => $OPENAI_MAX_TOKENS
+  ];
     
     // Fazer requisição para OpenAI
     $ch = curl_init($OPENAI_ENDPOINT);
