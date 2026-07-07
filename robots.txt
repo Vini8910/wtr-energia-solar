@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vini8910.github.io/wtr-energia-solar/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
