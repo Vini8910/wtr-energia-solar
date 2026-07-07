@@ -39,8 +39,8 @@ jobs:
           cp index.html deploy/
           cp -r assets deploy/
           cp -r branding deploy/
-          cp -r dist/styles deploy/styles/
-          cp -r dist/scripts deploy/scripts/
+          cp dist/styles/main.css deploy/styles/
+          cp dist/scripts/main.js deploy/scripts/
           cp -r pages deploy/ || true
 
       - name: Deploy
