@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a WTR Energia Solar para solicitar orçamento.">
+  <title>Contato - WTR Energia Solar</title>
+  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main" class="skip-link screen-reader-text">Ir para o conteúdo</a>
+
+  <header class="header">
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+      <div class="navbar__container">
+        <a href="/" class="navbar__brand" aria-label="WTR Energia Solar">
+          <img src="../../branding/logo/wtr-logo.svg" alt="WTR Energia Solar" width="180" height="40">
+        </a>
+        <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbar-menu">
+          <span class="navbar__hamburger"></span>
+        </button>
+        <ul class="navbar__menu" id="navbar-menu">
+          <li><a href="/" class="navbar__link">Home</a></li>
+          <li><a href="/pages/services/" class="navbar__link">Serviços</a></li>
+          <li><a href="/pages/about/" class="navbar__link">Sobre</a></li>
+          <li><a href="/pages/projects/" class="navbar__link">Projetos</a></li>
+          <li><a href="/pages/contact/" class="navbar__link">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="main">
+    <section class="hero" style="min-height: 50vh; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Entre em Contato</h1>
+          <p class="hero__subtitle">Solicite seu orçamento personalizado</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-cols-2">
+          <div data-animate>
+            <h2>Fale Conosco</h2>
+            <p>Preencha o formulário e nossa equipe entrará em contato em até 24 horas.</p>
+            
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Nome Completo *</label>
+                <input type="text" id="name" name="name" class="form-input" required placeholder="Seu nome">
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">E-mail *</label>
+                <input type="email" id="email" name="email" class="form-input" required placeholder="seu@email.com">
+              </div>
+              
+              <div class="form-group">
+                <label for="phone" class="form-label">Telefone *</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required placeholder="(11) 99999-9999">
+              </div>
+              
+              <div class="form-group">
+                <label for="whatsapp" class="form-label">WhatsApp</label>
+                <input type="tel" id="whatsapp" name="whatsapp" class="form-input" placeholder="(11) 99999-9999">
+              </div>
+              
+              <div class="form-group">
+                <label for="city" class="form-label">Cidade *</label>
+                <input type="text" id="city" name="city" class="form-input" required placeholder="Sua cidade">
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label">Tipo do Imóvel *</label>
+                <label class="radio">
+                  <input type="radio" name="property_type" value="residential" required>
+                  <span class="radio__checkmark"></span>
+                  <span class="radio__label">Residencial</span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="property_type" value="commercial">
+                  <span class="radio__checkmark"></span>
+                  <span class="radio__label">Comercial</span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="property_type" value="industrial">
+                  <span class="radio__checkmark"></span>
+                  <span class="radio__label">Industrial</span>
+                </label>
+              </div>
+              
+              <div class="form-group">
+                <label for="consumption" class="form-label">Consumo Médio (kWh)</label>
+                <input type="number" id="consumption" name="consumption" class="form-input" placeholder="Seu consumo médio">
+              </div>
+              
+              <button type="submit" class="btn btn--primary btn--lg btn--block">Solicitar Orçamento</button>
+            </form>
+          </div>
+          
+          <div data-animate>
+            <h2>Informações de Contato</h2>
+            <ul class="contact-info">
+              <li><strong>Endereço:</strong> Av. Interdistrital Comendador Emílio Romi, 609</li>
+              <li><strong>Telefone:</strong> (11) 99999-9999</li>
+              <li><strong>E-mail:</strong> contato@wtrenergiasolar.com.br</li>
+              <li><strong>Horário:</strong> Segunda a Sexta: 07h00 – 17h00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <img src="../../branding/logo/wtr-logo-white.svg" alt="WTR Energia Solar" width="180" height="40">
+        <p>Energia limpa para um futuro melhor</p>
+      </div>
+      <div class="footer__links">
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/services/">Serviços</a></li>
+          <li><a href="/pages/about/">Sobre</a></li>
+          <li><a href="/pages/projects/">Projetos</a></li>
+          <li><a href="/pages/contact/">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contato</h4>
+        <p>(11) 99999-9999</p>
+        <p>contato@wtrenergiasolar.com.br</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 WTR Energia Solar. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../../scripts/main.js" type="module"></script>
+</body>
+</html>

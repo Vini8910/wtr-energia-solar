@@ -1,0 +1,56 @@
+/* Design Tokens - Colors
+ * WTR Energia Solar
+ * Paleta de cores baseada em sustentabilidade e tecnologia
+ */
+
+:root {
+  /* Primary Colors - Solar Energy */
+  --color-primary: #FDB813;
+  --color-primary-light: #FFE580;
+  --color-primary-dark: #FF9500;
+  
+  /* Secondary Colors - Sustainability */
+  --color-secondary: #00713C;
+  --color-secondary-light: #4CD964;
+  --color-secondary-dark: #005229;
+  
+  /* Accent Colors - Technology */
+  --color-accent: #0052CC;
+  --color-accent-light: #4DA6FF;
+  --color-accent-dark: #003A99;
+  
+  /* Neutral Colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray-50: #FAFAFA;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-400: #BDBDBD;
+  --color-gray-500: #9E9E9E;
+  --color-gray-600: #757575;
+  --color-gray-700: #616161;
+  --color-gray-800: #424242;
+  --color-gray-900: #212121;
+  
+  /* Semantic Colors */
+  --color-background: var(--color-white);
+  --color-background-alt: var(--color-gray-50);
+  --color-text: var(--color-gray-900);
+  --color-text-light: var(--color-gray-600);
+  --color-text-muted: var(--color-gray-500);
+  
+  /* Status Colors */
+  --color-success: #28A745;
+  --color-success-light: #D4EDDA;
+  --color-warning: #FFC107;
+  --color-warning-light: #FFF3CD;
+  --color-error: #DC3545;
+  --color-error-light: #F8D7DA;
+  --color-info: #17A2B8;
+  --color-info-light: #D1ECF1;
+  
+  /* Overlay */
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-overlay-light: rgba(255, 255, 255, 0.9);
+}
