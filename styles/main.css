@@ -4,22 +4,22 @@
  */
 
 /* Design Tokens */
-@import url('../branding/palette/index.css');
+@import '../branding/palette/index.css';
 
 /* Base Styles */
-@import url('./base/reset.css');
-@import url('./base/typography.css');
-@import url('./base/base.css');
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/base.css';
 
 /* Component Styles */
-@import url('./components/buttons.css');
-@import url('./components/cards.css');
-@import url('./components/forms.css');
-@import url('./components/navigation.css');
-@import url('./components/ui.css');
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+@import './components/navigation.css';
+@import './components/ui.css';
 
 /* Utility Classes */
-@import url('./utilities/helpers.css');
+@import './utilities/helpers.css';
 
 /* Hero Section */
 .hero {
